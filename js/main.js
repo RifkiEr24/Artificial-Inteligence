@@ -39,6 +39,24 @@ $(document).ready(function () {
     $("#back").click(function() {
         slide2.play();
     })        
+    $("#pilih").click(function(){
+        anime({
+            duration:1500,
+            targets: '#bola',
+            translateX: -675,
+            translateY:-350,
+            easing:'easeInOutExpo'
+          });
+    })
+    $("#pilih2").click(function(){
+        anime({
+            duration:1500,
+            targets: '#bola',
+            translateX: 675,
+            translateY: -350,
+            easing:'easeInOutExpo'
+          });
+    })
 //Content1
 // $("#next").click(function() {
 //     //Content Slider

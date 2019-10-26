@@ -124,6 +124,7 @@
     width:350px;
   }
   .content2{
+    overflow: hidden;
     z-index:2;
     color:white;
     position: absolute;
@@ -322,6 +323,23 @@
   top:0;
   margin-left: 70rem;
 }
+.fluid2{
+  position: absolute;
+  
+  right: 0;
+  top:0;
+  bottom: 0;
+  width: 50%;
+  height: 100vh;
+  
+  
+}
+.bola{
+  position: absolute;
+  width: 450px;
+  left: 35%;
+  margin-top: 475px;
+}
 .vector{
   z-index:1;
   position: absolute;
@@ -363,10 +381,26 @@
   top:0;
   overflow-y: initial;
   overflow-x: unset;
-  background-color: black;
+  
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 #content2{
-  background-color: black;
+  
+  overflow-y: initial;
+  overflow-x: unset;
+  
 }
 .content-border{
   z-index: -1;
@@ -406,3 +440,44 @@
     -webkit-filter: blur(3px);
     
   }
+  .filterblack{
+    -webkit-filter: grayscale(50%); /* Safari */
+    filter: grayscale(100%);
+  }
+  .pilih{
+    position: absolute;
+    margin-left: 250px;
+    font-size: 18pt;
+    margin-top: 275px;
+  }
+  .pilih:hover i{
+    transition: 0.3s ease;
+    color:black;
+    padding-right: 8px;
+  }
+  .pilih i{
+    transition: 0.3s ease;
+    display: inline-block;
+    color:rgba(255, 255, 255, 0);
+    padding-right:0px;
+  }
+  .pilih2{
+    position: absolute;
+    margin-left: 850px;
+    font-size: 18pt;
+    margin-top: 275px;
+  color: white;
+  }
+  .pilih2:hover i{
+    transition: 0.3s ease;
+    color:white;
+    padding-left: 8px;
+  }
+  .pilih2 i{
+    transition: 0.3s ease;
+    display: inline-block;
+    color:rgba(255, 255, 255, 0);
+    padding-left:0px;
+  }
+  
+  
