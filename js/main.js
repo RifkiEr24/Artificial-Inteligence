@@ -57,6 +57,34 @@ $(document).ready(function () {
             easing:'easeInOutExpo'
           });
     })
+    
+    const kedua="M652,639c34,0,545.6-12,566-12s7-456.6,7-477S172.4,140,152,140s-15,470.6-15,491";
+
+const pertama=
+"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
+const prevS=document.querySelector('#bukansvg');
+prevS.onclick = function() {
+    anime({
+        duration:1500,
+        targets: '#bukansvg',
+        translateX: -1000,
+        translateY: -300,
+        easing:'easeOutExpo',
+        width:'2500px'
+      });
+    const timeline = anime.timeline({
+      duration:2000,
+      easing : "easeOutExpo"
+    });
+    timeline.add({
+        targets:".apaan",
+      
+        d: [
+            {value:kedua}
+        ]
+ 
+    })
+}
 //Content1
 // $("#next").click(function() {
 //     //Content Slider

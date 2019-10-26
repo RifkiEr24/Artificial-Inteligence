@@ -265,6 +265,7 @@
   font-family: 'Gilroy B';
   margin:0;
 }
+
 .sub{
   font-family: 'Gilroy R';
   color:#009EEB;
@@ -300,6 +301,15 @@
   margin-left:15%;
 }
 .title3 p{
+  font-family: 'Gilroy L';
+  margin:0;
+}
+.title4{
+  display: block;
+  font-size: 36px;
+    margin-left:15%;
+}
+.title4 p{
   font-family: 'Gilroy L';
   margin:0;
 }
@@ -479,5 +489,37 @@
     color:rgba(255, 255, 255, 0);
     padding-left:0px;
   }
-  
-  
+  .whitesvg{
+    fill:#FFFFFF;
+  }
+  .rectangle{
+    width: 75%;
+    height: 150px;
+    position: absolute;
+margin-top: 177px;
+  margin-left: 62rem;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background-color:black;  
+  }
+  .title3{
+    display: block;
+    font-size: 40px; 
+    left: 0;
+    position:absolute;
+    margin-top: ;
+    
+    position: absolute;
+  }
+  .title3 p{
+    font-family: 'Gilroy B';
+    margin:0;
+  }
+  .content3{
+    font-size: 17px;
+    display:block;
+    margin-top: 300px;
+    margin-left: 50rem;
+    width:350px;
+    color: white;
+  }
